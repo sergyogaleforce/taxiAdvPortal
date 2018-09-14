@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1825889bbbc44923d600d21acb6d7f63",
+    "content-hash": "804f3601eda0ac2f659999eda60d02ba",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -740,6 +740,54 @@
             "time": "2018-08-22T07:45:22+00:00"
         },
         {
+            "name": "logaretm/transformers",
+            "version": "0.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/logaretm/transformers.git",
+                "reference": "90309c08bd722f2cd38a5fea78b9dc2f157d8ecf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/logaretm/transformers/zipball/90309c08bd722f2cd38a5fea78b9dc2f157d8ecf",
+                "reference": "90309c08bd722f2cd38a5fea78b9dc2f157d8ecf",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^5.2",
+                "illuminate/support": "^5.2"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "^1.5",
+                "illuminate/database": "^5.2",
+                "illuminate/pagination": "^5.2",
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "^5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Logaretm\\Transformers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abdelrahman Awad",
+                    "email": "logaretm1@gmail.com"
+                }
+            ],
+            "description": "Simple laravel eloquent models transformers.",
+            "keywords": [
+                "laravel",
+                "transformers"
+            ],
+            "time": "2016-11-13T22:59:24+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.23.0",
             "source": {
@@ -1265,6 +1313,55 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "spatie/laravel-sluggable",
+            "version": "2.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-sluggable.git",
+                "reference": "2f383e6957b544b200203ca717000b57189ca045"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-sluggable/zipball/2f383e6957b544b200203ca717000b57189ca045",
+                "reference": "2f383e6957b544b200203ca717000b57189ca045",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
+                "phpunit/phpunit": "^6.3|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Sluggable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Generate slugs when saving Eloquent models",
+            "homepage": "https://github.com/spatie/laravel-sluggable",
+            "keywords": [
+                "laravel-sluggable",
+                "spatie"
+            ],
+            "time": "2018-08-28T14:09:46+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

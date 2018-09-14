@@ -15,10 +15,10 @@ class CreateAdvertiserRequestTable extends Migration
     {
         Schema::create('advertiser_request', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('prod_agency_id');
-            $table->string('markets');
+            $table->integer('client_id');
             $table->string('car_model');
-            $table->string('demographics');
+            $table->string('car_brand');
+            $table->integer('demographic_id');
             $table->string('ethnic');
             $table->time('driving_from');
             $table->time('driving_to');

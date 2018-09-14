@@ -22,7 +22,7 @@ class CreateAdvertiserTable extends Migration
             $table->string('resource');
             $table->string('colors');
             $table->integer('adv_category_id');
-            $table->string('car_place');
+            $table->string('car_place_id');
             $table->string('description');
             $table->timestamps();
         });

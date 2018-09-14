@@ -15,6 +15,7 @@ class CreateCarInsuranceTable extends Migration
     {
         Schema::create('car_insurance', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('car_id');
             $table->string('company');
             $table->date('from');
             $table->date('to');

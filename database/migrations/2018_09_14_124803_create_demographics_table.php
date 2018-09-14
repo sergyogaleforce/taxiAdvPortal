@@ -18,7 +18,6 @@ class CreateDemographicsTable extends Migration
             $table->string('type');
             $table->string('age');
             $table->string('description');
-            $table->string('ethnic');
             $table->timestamps();
         });
     }

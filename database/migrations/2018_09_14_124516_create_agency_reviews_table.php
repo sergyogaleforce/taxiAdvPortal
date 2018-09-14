@@ -17,7 +17,7 @@ class CreateAgencyReviewsTable extends Migration
             $table->increments('id');
             $table->integer('prod_agency_id');
             $table->integer('client_id');
-            $table->integer('starts');
+            $table->integer('score');
             $table->string('description');
             $table->timestamps();
         });
