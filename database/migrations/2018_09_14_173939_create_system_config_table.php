@@ -24,6 +24,9 @@ class CreateSystemConfigTable extends Migration
             $table->double('commission_percent');
             $table->string('status');
             $table->string('offline_message');
+            $table->boolean('email_notifications');
+            $table->boolean('push_notifications');
+            $table->boolean('text_notifications');
             $table->timestamps();
         });
     }
