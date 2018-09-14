@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDriverTable extends Migration
+class CreateAgencyLogosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,13 @@ class CreateDriverTable extends Migration
      */
     public function up()
     {
-        Schema::create('driver', function (Blueprint $table) {
+        Schema::create('agency_logos', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('file_name');
+            $table->string('file_ext');
+            $table->binary('file');
+            $table->integer('size');
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -26,6 +31,6 @@ class CreateDriverTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('driver');
+        Schema::dropIfExists('agency_logos');
     }
 }
